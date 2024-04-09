@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pico8 Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Pico8 Games</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        max-width: 700px;
+        margin: 0 auto; /* Centering the grid */
+    }
+    .image-item {
+        text-align: center;
+    }
+    .image-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: black;
+    }
+    .image-title {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
-  <h1>Click a Link to Play</h1>
-  <ul>
-    <li><a href="whits_notes.html">Whit's Notes</a></li>  
-  </ul>
+
+<div class="container">
+    <h1 class="title">My Pico8 Games</h1>
+
+    <div class="image-grid">
+        <a class="image-item" href="/bet/index.html">
+            <img src="/bet/label.png" alt="Bet Cover Art">
+            <div class="image-title">Bet</div>
+        </a>
+        <a class="image-item" href="/whits_notes/index.html">
+            <img src="/whits_notes/label.png" alt="Whit's Notes Cover Art">
+            <div class="image-title">Whit's Notes</div>
+        </a>
+        <a class="image-item" href="/mothers_day/index.html">
+            <img src="/mothers_day/label.png" alt="Mother's Day Cover Art">
+            <div class="image-title">Mother's Day</div>
+        </a>
+        <!-- Add more image items as needed -->
+    </div>
+</div>
+
 </body>
 </html>
